@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style/style-main.css">
+    <style>
+        .center-div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .center-div a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .center-div h1 {
+            font-size: 2vw;
+            /* Utiliza vw para el tamaño de fuente */
+            text-shadow: 2px 2px 4px rgb(22, 19, 19);
+        }
+
+        .center-div a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media query para ajustar el menú de navegación en pantallas pequeñas */
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 100%;">
+        <video id="video-background" autoplay muted loop style="object-fit: cover; width: 100%; height: 100vh;">
+            <source src="Video/Datos.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="transition-fade">HOME</a>
+            <a href="asesoramiento.html" class="transition-fade">ASESORAMIENTO DE ORDENADORES</a>
+            <a href="web.html" class="transition-fade">DESARROLLO WEB</a>
+            <a href="contacto.html" class="transition-fade">CONTACTO</a>
+            <div id="indicator"></div>
+        </nav>
+    </header>
+</body>
+
+</html>
